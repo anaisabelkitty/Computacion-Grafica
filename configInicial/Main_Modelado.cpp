@@ -205,17 +205,17 @@ int main() {
 
 		//EJERCICIO1
 		//aplanar cubo 
-		//model = glm::mat4(1.0f);
-		//model = glm::scale(model, glm::vec3(2.0f, 0.1f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glDrawArrays(GL_TRIANGLES, 0, 36);
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(2.0f, 0.1f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
 
-		////aplanar cubo y desplazarlo hacia arriba en el eje y
-		//model = glm::mat4(1.0f);
-		//model = glm::scale(model, glm::vec3(2.0f, 0.1f, 1.0f));
-		//model = glm::translate(model, glm::vec3(0.0f, 10.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glDrawArrays(GL_TRIANGLES, 0, 36);
+		//aplanar cubo y desplazarlo hacia arriba en el eje y
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(2.0f, 0.1f, 1.0f));
+		model = glm::translate(model, glm::vec3(0.0f, 10.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		//mesa
 		model = glm::mat4(1.0f);
