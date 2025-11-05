@@ -12,17 +12,17 @@ El repositorio está organizado en **ramas**, donde cada una representa una prá
 
 | Rama | Descripción | Enlace |
 |------|-------------|--------|
-| `main` | Práctica 0: Configuración del Entorno de Desarrollo | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/main) |
-| `practica1` | Práctica 1: Introducción a OpenGL | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica1) |
-| `practica2` | Práctica 2: Proyecciones y Transformaciones Geométricas | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica2) |
-| `practica3` | Práctica 3: Modelado Geométrico 3D | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica3) |
-| `practica4` | Práctica 4: Jerarquías de Objetos - Brazo Robótico | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica4) |
-| `practica5` | Práctica 5: Carga de Modelos 3D y Cámara Sintética | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica5) |
-| `practica6` | Práctica 6: Texturizado en OpenGL | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica6) |
-| `practica7` | Práctica 7: Iluminación - Modelo Phong | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica7) |
-| `practica8` | Práctica 8: Técnicas Avanzadas de Iluminación | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica8) |
-| `practica9` | Práctica 9: Animación 3D en Tiempo Real | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica9) |
-| `practica10` | Práctica 10: Sistema de Animación por Keyframes | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica10) |
+| `main` | Práctica 0: Configuración del Entorno de Desarrollo | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/master) |
+| `practica1` | Práctica 1: Introducción a OpenGL | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica1_Introduccion_a_OpenGL-_(actualizada)) |
+| `practica2` | Práctica 2: Proyecciones y Transformaciones Geométricas | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica2_Proyecciones_y_Puertos_de_vista_Transformaciones_Geometricas_(actualizada)) |
+| `practica3` | Práctica 3: Modelado Geométrico 3D | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica3_Modelado_Geometrico) |
+| `practica4` | Práctica 4: Jerarquías de Objetos - Brazo Robótico | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica4_Modelado_Jerarquico) |
+| `practica5` | Práctica 5: Carga de Modelos 3D y Cámara Sintética | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica5_Carga_de_modelos_y_Camara_Sintetica) |
+| `practica6` | Práctica 6: Texturizado en OpenGL | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica6_Texturizado) |
+| `practica7` | Práctica 7: Iluminación - Modelo Phong | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica7_Iluminaci%C3%B3n_1) |
+| `practica8` | Práctica 8: Técnicas Avanzadas de Iluminación | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica8_Iluminacion_2) |
+| `practica9` | Práctica 9: Animación 3D en Tiempo Real | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica9_Animacion_Basica) |
+| `practica10` | Práctica 10: Sistema de Animación por Keyframes | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica10_Animacion_por_Keyframes) |
 
 ## 🚀 Cómo navegar el repositorio
 
