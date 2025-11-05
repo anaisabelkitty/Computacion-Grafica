@@ -12,27 +12,27 @@ El repositorio está organizado en **ramas**, donde cada una representa una prá
 
 | Rama | Descripción | Enlace |
 |------|-------------|--------|
-| `main` | Práctica 0: Configuración del Entorno de Desarrollo | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/master) |
-| `practica1` | Práctica 1: Introducción a OpenGL | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica1_Introduccion_a_OpenGL-_(actualizada)) |
-| `practica2` | Práctica 2: Proyecciones y Transformaciones Geométricas | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica2_Proyecciones_y_Puertos_de_vista_Transformaciones_Geometricas_(actualizada)) |
-| `practica3` | Práctica 3: Modelado Geométrico 3D | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica3_Modelado_Geometrico) |
-| `practica4` | Práctica 4: Jerarquías de Objetos - Brazo Robótico | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica4_Modelado_Jerarquico) |
-| `practica5` | Práctica 5: Carga de Modelos 3D y Cámara Sintética | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica5_Carga_de_modelos_y_Camara_Sintetica) |
-| `practica6` | Práctica 6: Texturizado en OpenGL | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica6_Texturizado) |
-| `practica7` | Práctica 7: Iluminación - Modelo Phong | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica7_Iluminaci%C3%B3n_1) |
-| `practica8` | Práctica 8: Técnicas Avanzadas de Iluminación | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica8_Iluminacion_2) |
-| `practica9` | Práctica 9: Animación 3D en Tiempo Real | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica9_Animacion_Basica) |
-| `practica10` | Práctica 10: Sistema de Animación por Keyframes | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica10_Animacion_por_Keyframes) |
+| `master` | Práctica 0: Configuración del Entorno de Desarrollo | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/master) |
+| `practica1_Introduccion_a_OpenGL-_(actualizada)` | Práctica 1: Introducción a OpenGL | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica1_Introduccion_a_OpenGL-_(actualizada)) |
+| `practica2_Proyecciones_y_Puertos_de_vista_Transformaciones_Geometricas_(actualizada)` | Práctica 2: Proyecciones y Transformaciones Geométricas | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica2_Proyecciones_y_Puertos_de_vista_Transformaciones_Geometricas_(actualizada)) |
+| `practica3_Modelado_Geometrico` | Práctica 3: Modelado Geométrico 3D | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica3_Modelado_Geometrico) |
+| `practica4_Modelado_Jerarquico` | Práctica 4: Jerarquías de Objetos - Brazo Robótico | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica4_Modelado_Jerarquico) |
+| `practica5_Carga_de_modelos_y_Camara_Sintetica` | Práctica 5: Carga de Modelos 3D y Cámara Sintética | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica5_Carga_de_modelos_y_Camara_Sintetica) |
+| `practica6_Texturizado` | Práctica 6: Texturizado en OpenGL | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica6_Texturizado) |
+| `practica7_Iluminación_1` | Práctica 7: Iluminación - Modelo Phong | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica7_Iluminaci%C3%B3n_1) |
+| `practica8_Iluminacion_2` | Práctica 8: Técnicas Avanzadas de Iluminación | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica8_Iluminacion_2) |
+| `practica9_Animacion_Basica` | Práctica 9: Animación 3D en Tiempo Real | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica9_Animacion_Basica) |
+| `practica10_Animacion_por_Keyframes` | Práctica 10: Sistema de Animación por Keyframes | [Ver rama](https://github.com/anaisabelkitty/Computacion-Grafica/tree/practica10_Animacion_por_Keyframes) |
 
 ## 🚀 Cómo navegar el repositorio
 
 ### Opción 1: Desde GitHub (Recomendado)
 1. Ve a la [página principal del repositorio](https://github.com/anaisabelkitty/Computacion-Grafica)
-2. Haz clic en el selector de ramas (donde dice `main`)
+2. Haz clic en el selector de ramas (donde dice `master`)
 3. Selecciona la práctica que deseas revisar:
-   - `main` → Práctica 0
-   - `practica1` → Práctica 1
-   - `practica2` → Práctica 2
+   - `master` → Práctica 0
+   - `practica1_Introduccion_a_OpenGL-_(actualizada)` → Práctica 1
+   - `practica2_Proyecciones_y_Puertos_de_vista_Transformaciones_Geometricas_(actualizada)` → Práctica 2
    - Y así sucesivamente...
 4. Explora los archivos de esa práctica específica
 
@@ -45,12 +45,16 @@ cd Computacion-Grafica
 # Ver todas las ramas disponibles
 git branch -a
 
-# Ver la Práctica 0 (ya estás en main por defecto)
+# Ver la Práctica 0 (ya estás en master por defecto)
+
 # Para ver la Práctica 1:
-git checkout practica1
+git checkout practica1_Introduccion_a_OpenGL-_\(actualizada\)
 
 # Para ver la Práctica 2:
-git checkout practica2
+git checkout practica2_Proyecciones_y_Puertos_de_vista_Transformaciones_Geometricas_\(actualizada\)
+
+# Para ver la Práctica 3:
+git checkout practica3_Modelado_Geometrico
 
 # Y así sucesivamente...
 ```
@@ -61,10 +65,13 @@ git checkout practica2
 git clone https://github.com/anaisabelkitty/Computacion-Grafica.git
 
 # Para clonar solo la Práctica 1:
-git clone -b practica1 --single-branch https://github.com/anaisabelkitty/Computacion-Grafica.git practica1
+git clone -b practica1_Introduccion_a_OpenGL-_\(actualizada\) --single-branch https://github.com/anaisabelkitty/Computacion-Grafica.git practica1
 
 # Para clonar solo la Práctica 2:
-git clone -b practica2 --single-branch https://github.com/anaisabelkitty/Computacion-Grafica.git practica2
+git clone -b practica2_Proyecciones_y_Puertos_de_vista_Transformaciones_Geometricas_\(actualizada\) --single-branch https://github.com/anaisabelkitty/Computacion-Grafica.git practica2
+
+# Para clonar la Práctica 3:
+git clone -b practica3_Modelado_Geometrico --single-branch https://github.com/anaisabelkitty/Computacion-Grafica.git practica3
 
 # Y así sucesivamente...
 ```
@@ -88,7 +95,7 @@ git clone -b practica2 --single-branch https://github.com/anaisabelkitty/Computa
 > **Nota:** Para ver el contenido detallado de cada práctica, navega a su rama correspondiente.
 
 ### Práctica 0: Configuración del Entorno de Desarrollo
-📍 **Rama:** `main`
+📍 **Rama:** `master`
 
 **Objetivo:** Configurar el entorno de trabajo en Visual Studio Community 2022 e integrar las librerías necesarias de OpenGL.
 
@@ -105,7 +112,7 @@ git clone -b practica2 --single-branch https://github.com/anaisabelkitty/Computa
 ---
 
 ### Práctica 1: Introducción a OpenGL
-📍 **Rama:** `practica1`
+📍 **Rama:** `practica1_Introduccion_a_OpenGL-_(actualizada)`
 
 **Objetivo:** Configurar un proyecto en OpenGL y aplicar shaders básicos para dibujar primitivas en 2D.
 
@@ -122,7 +129,7 @@ git clone -b practica2 --single-branch https://github.com/anaisabelkitty/Computa
 ---
 
 ### Práctica 2: Proyecciones y Transformaciones Geométricas
-📍 **Rama:** `practica2`
+📍 **Rama:** `practica2_Proyecciones_y_Puertos_de_vista_Transformaciones_Geometricas_(actualizada)`
 
 **Objetivo:** Comprender y aplicar los conceptos de proyecciones y transformaciones geométricas en gráficos por computadora.
 
@@ -139,7 +146,7 @@ git clone -b practica2 --single-branch https://github.com/anaisabelkitty/Computa
 ---
 
 ### Práctica 3: Modelado Geométrico 3D
-📍 **Rama:** `practica3`
+📍 **Rama:** `practica3_Modelado_Geometrico`
 
 **Objetivo:** Aplicar el modelado geométrico en la representación de objetos 3D con OpenGL, partiendo de un cubo inicial.
 
@@ -156,7 +163,7 @@ git clone -b practica2 --single-branch https://github.com/anaisabelkitty/Computa
 ---
 
 ### Práctica 4: Jerarquías de Objetos - Brazo Robótico
-📍 **Rama:** `practica4`
+📍 **Rama:** `practica4_Modelado_Jerarquico`
 
 **Objetivo:** Construir un brazo robótico en 3D aplicando el modelo jerárquico para comprender la relación padre-hijo en transformaciones.
 
@@ -173,7 +180,7 @@ git clone -b practica2 --single-branch https://github.com/anaisabelkitty/Computa
 ---
 
 ### Práctica 5: Carga de Modelos 3D y Cámara Sintética
-📍 **Rama:** `practica5`
+📍 **Rama:** `practica5_Carga_de_modelos_y_Camara_Sintetica`
 
 **Objetivo:** Cargar y manipular modelos 3D externos en una escena gráfica, integrando una cámara sintética para navegación.
 
@@ -190,7 +197,7 @@ git clone -b practica2 --single-branch https://github.com/anaisabelkitty/Computa
 ---
 
 ### Práctica 6: Texturizado en OpenGL
-📍 **Rama:** `practica6`
+📍 **Rama:** `practica6_Texturizado`
 
 **Objetivo:** Aplicar texturas a superficies 3D para mejorar su representación visual.
 
@@ -208,7 +215,7 @@ git clone -b practica2 --single-branch https://github.com/anaisabelkitty/Computa
 ---
 
 ### Práctica 7: Iluminación - Modelo Phong
-📍 **Rama:** `practica7`
+📍 **Rama:** `practica7_Iluminación_1`
 
 **Objetivo:** Implementar el modelo de iluminación Phong para comprender los principios fundamentales de la iluminación en gráficos.
 
@@ -226,7 +233,7 @@ git clone -b practica2 --single-branch https://github.com/anaisabelkitty/Computa
 ---
 
 ### Práctica 8: Técnicas Avanzadas de Iluminación
-📍 **Rama:** `practica8`
+📍 **Rama:** `practica8_Iluminacion_2`
 
 **Objetivo:** Implementar diferentes técnicas de iluminación en una escena tridimensional utilizando OpenGL y GLSL.
 
@@ -244,7 +251,7 @@ git clone -b practica2 --single-branch https://github.com/anaisabelkitty/Computa
 ---
 
 ### Práctica 9: Animación 3D en Tiempo Real
-📍 **Rama:** `practica9`
+📍 **Rama:** `practica9_Animacion_Basica`
 
 **Objetivo:** Implementar un sistema de animación 3D en tiempo real para comprender los fundamentos de las transformaciones geométricas aplicadas progresivamente.
 
@@ -262,7 +269,7 @@ git clone -b practica2 --single-branch https://github.com/anaisabelkitty/Computa
 ---
 
 ### Práctica 10: Sistema de Animación por Keyframes
-📍 **Rama:** `practica10`
+📍 **Rama:** `practica10_Animacion_por_Keyframes`
 
 **Objetivo:** Desarrollar un sistema completo de animación por keyframes para controlar un modelo 3D articulado.
 
@@ -300,15 +307,14 @@ Todas las dependencias están incluidas en cada rama del proyecto:
 
 1. **Clonar la rama deseada:**
 ```bash
-# Para la Práctica 0:
+# Para la Práctica 0 (rama master):
 git clone https://github.com/anaisabelkitty/Computacion-Grafica.git
 cd Computacion-Grafica
 
-# Para la Práctica 1:
-git clone -b practica1 https://github.com/anaisabelkitty/Computacion-Grafica.git
+# Para otras prácticas, usa el nombre específico de la rama
+# Ejemplo para Práctica 3:
+git clone -b practica3_Modelado_Geometrico https://github.com/anaisabelkitty/Computacion-Grafica.git
 cd Computacion-Grafica
-
-# Y así sucesivamente...
 ```
 
 2. **Abrir el proyecto en Visual Studio:**
@@ -358,12 +364,13 @@ Consulta el código fuente de cada práctica para controles específicos.
 
 ## 📝 Notas importantes
 
-- La rama **`main`** contiene la **Práctica 0**
-- Las ramas `practica1` a `practica10` contienen las Prácticas 1 a 10 respectivamente
+- La rama **`master`** contiene la **Práctica 0** (Configuración del Entorno)
+- Las demás prácticas tienen nombres descriptivos que identifican su contenido
 - Cada rama es **independiente** y contiene únicamente los archivos de su práctica correspondiente
 - No mezcles código entre ramas para mantener la organización del repositorio
 - Todos los proyectos parten de una base común llamada `configInicial`
 - Las prácticas están diseñadas para construirse progresivamente sobre conceptos previos
+- Algunas ramas tienen el sufijo `_(actualizada)` indicando que son versiones mejoradas
 
 ## 🏫 Información Académica
 
