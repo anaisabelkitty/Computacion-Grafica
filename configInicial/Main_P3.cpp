@@ -18,6 +18,17 @@
 
 const GLint WIDTH = 800, HEIGHT = 600;
 
+void drawCube(Shader& shader, GLuint VAO, glm::vec3 position, glm::vec3 rotationAxis, float rotationAngle, glm::vec3 scale, GLint modelLoc) {
+	glm::mat4 model = glm::mat4(1);            // matriz identidad
+	model = glm::translate(model, position);   // mover
+	model = glm::rotate(model, rotationAngle, rotationAxis); // rotar
+	model = glm::scale(model, scale);          // escalar
+
+	glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+	glBindVertexArray(VAO);
+	glDrawArrays(GL_TRIANGLES, 0, 36);
+	glBindVertexArray(0);
+}
 
 int main() {
 	glfwInit();
@@ -204,63 +215,34 @@ int main() {
 
 	projection = glm::perspective(45.0f, (GLfloat)screenWidth / (GLfloat)screenHeight, 0.1f, 100.0f);//FOV, Radio de aspecto,znear,zfar
 	//projection = glm::ortho(0.0f, (GLfloat)screenWidth, 0.0f, (GLfloat)screenHeight, 0.1f, 1000.0f);//Izq,Der,Fondo,Alto,Cercania,Lejania
+
 	while (!glfwWindowShouldClose(window))
 	{
-		// Check if any events have been activiated (key pressed, mouse moved etc.) and call corresponding response functions
 		glfwPollEvents();
 
-		// Render
-		// Clear the colorbuffer
+		// Limpiar pantalla
 		glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-
-		// Draw our first triangle
 		ourShader.Use();
-		glm::mat4 model = glm::mat4(1);
-		glm::mat4 view = glm::mat4(1);
 
-		view = glm::translate(view, glm::vec3(5.0f, 2.0f, -25.0f)); //-5
-		model = glm::rotate(model, 0.5f, glm::vec3(1.0f, 1.0f, 0.0f)); // use to compare orthographic and perspective projection
-		model = glm::scale(model, glm::vec3(5.5f, 2.5f, 1.5f));
-
-		//view = glm::translate( view, glm::vec3( screenWidth / 2, screenHeight / 2,800.0f ) ); // use with orthographic projection
-		//800 ortogonalidad
-
+		// Matrices view y projection
+		glm::mat4 view = glm::translate(glm::mat4(1), glm::vec3(0.0f, 0.0f, -15.0f));
 		GLint modelLoc = glGetUniformLocation(ourShader.Program, "model");
 		GLint viewLoc = glGetUniformLocation(ourShader.Program, "view");
 		GLint projecLoc = glGetUniformLocation(ourShader.Program, "projection");
 
-		glUniformMatrix4fv(projecLoc, 1, GL_FALSE, glm::value_ptr(projection));
 		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniformMatrix4fv(projecLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
+		// Dibujar cubos usando la función
+		drawCube(ourShader, VAO, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 0.0f), 0.5f, glm::vec3(5.5f, 2.5f, 1.5f), modelLoc);
+		drawCube(ourShader, VAO, glm::vec3(5.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), 0.0f, glm::vec3(1.0f, 1.0f, 1.0f), modelLoc);
+		drawCube(ourShader, VAO, glm::vec3(5.0f, -10.0f, -5.0f), glm::vec3(5.0f, 8.0f, 10.0f), 0.5f, glm::vec3(2.0f, 1.0f, 1.0f), modelLoc);
 
-		glBindVertexArray(VAO);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
-
-		//-----------------
-		model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(-2.0f, 5.0f, 0.0f));
-		model = glm::rotate(model, 0.5f, glm::vec3(1.0f, 5.0f, 0.0f));
-		model = glm::scale(model, glm::vec3(3.0f, 5.0f, 1.0f));
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glDrawArrays(GL_TRIANGLES, 0, 36);
-
-		model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(5.0f, -10.0f, -5.0f)); // mover a la derecha
-		model = glm::rotate(model, 0.5f, glm::vec3(5.0f, 8.0f, 0.0f)); // use to compare orthographic and perspective projection
-		model = glm::scale(model, glm::vec3(2.0f, 1.0f, 1.0f));
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glDrawArrays(GL_TRIANGLES, 0, 36);
-
-		glBindVertexArray(0);
-
-
-		// Swap the screen buffers
 		glfwSwapBuffers(window);
-
 	}
+
 	glDeleteVertexArrays(1, &VAO);
 	glDeleteBuffers(1, &VBO);
 
